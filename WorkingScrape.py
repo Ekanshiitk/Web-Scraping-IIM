@@ -8,11 +8,10 @@ from bs4 import BeautifulSoup
 import os
 
 # Step 1: Set up Selenium WebDriver
-driver = webdriver.Safari()  # Use SafariDriver; replace with ChromeDriver if using Chrome
+driver = webdriver.Safari() 
 url = "https://iimlibrariesconsortium.in/faculty.html"  #
 driver.get(url)
 
-# Step 2: Click "Show More" until it no longer exists
 while True:
     try:
         # Wait for the "Show More" button to be clickable
